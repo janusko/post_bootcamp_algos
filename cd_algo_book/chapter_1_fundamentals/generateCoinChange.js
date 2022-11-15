@@ -27,6 +27,6 @@ function generateCoinChange(cents) {
 }
 
 console.log(generateCoinChange(95));
-console.log(generateCoinChange(73));
+console.log(generateCoinChange(74));
 console.log(generateCoinChange(27));
 console.log(generateCoinChange(0));

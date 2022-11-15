@@ -17,4 +17,4 @@ function BetterThreesFives(start, end) {
 }
 
 console.log(BetterThreesFives(100, 4000000));
-console.log(BetterThreesFives(2, 5000));
+console.log(BetterThreesFives(2, 5001));
