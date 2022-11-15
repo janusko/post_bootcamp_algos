@@ -21,6 +21,6 @@ function sumToOne(num) {
 }
 
 console.log(sumToOne(724));
-console.log(sumToOne(90314));
+console.log(sumToOne(90349));
 console.log(sumToOne(27));
 console.log(sumToOne(0));
