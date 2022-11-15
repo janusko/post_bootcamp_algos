@@ -16,4 +16,4 @@ function ThreesFives() {
     return total;
 }
 
-console.log(ThreesFives());
+console.log(ThreesFives())
