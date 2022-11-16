@@ -9,4 +9,4 @@ function pushFront(arr, newNum) {
 }
 
 console.log(pushFront([2,3,4,5], 1));
-console.log(pushFront([27,5,89], 0));
+console.log(pushFront([27,5,89], 10));
