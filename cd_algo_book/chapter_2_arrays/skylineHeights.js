@@ -7,7 +7,10 @@ function skylineHeights(array) {
     const sightline = [];
     let highest = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] >= highest) {
+        if (sightline.length == 0) {
+            sightline.push(array[i]);
+            highest = array[i];
+        } else if (array[i] > highest) {
             sightline.push(array[i]);
             highest = array[i];
         }
