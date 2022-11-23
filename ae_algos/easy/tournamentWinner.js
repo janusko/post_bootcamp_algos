@@ -13,11 +13,13 @@ function tournamentWinner(competitions, results) {
 
         if (results[i] === 0) {
             scoreMap[awayTeam] = (scoreMap[awayTeam] || 0) + 3;
+            console.log(scoreMap);
         } else {
-            scoreMap[homeTeam] = (scoreMap[homeTeam || 0]) + 3;
+            scoreMap[homeTeam] = (scoreMap[homeTeam] || 0) + 3;
+            console.log(scoreMap);
         }
 
-        if (scoreMap[awayTeam] >= winner.score) {
+        if (scoreMap[awayTeam] > winner.score) {
             winner = {score: scoreMap[awayTeam], name: awayTeam};
         } else if (scoreMap[homeTeam] >= winner.score) {
             winner = {score: scoreMap[homeTeam], name: homeTeam};
@@ -26,7 +28,8 @@ function tournamentWinner(competitions, results) {
     return winner.name;
 }
 
-console.log(tournamentWinner([["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]], [0, 0, 1]))
+console.log(tournamentWinner([["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]], [0, 0, 1]));
+console.log(tournamentWinner([["Bulls", "Eagles"]], [1]));
 
 // O(n) - length of competitions list or number of results.
 // O(k) - number of teams competing in tournament. Comes from scores data structure. At most will store k + 1 teams.
