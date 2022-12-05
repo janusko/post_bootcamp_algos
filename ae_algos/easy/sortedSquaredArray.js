@@ -23,3 +23,5 @@ function sortedSquaredArray(array) {
 }
 
 console.log(sortedSquaredArray([1, 2, 3, 5, 6, 8, 9]))
+
+//test branch 1
