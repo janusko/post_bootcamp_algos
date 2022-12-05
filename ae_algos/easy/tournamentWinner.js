@@ -33,3 +33,5 @@ console.log(tournamentWinner([["Bulls", "Eagles"]], [1]));
 
 // O(n) - length of competitions list or number of results.
 // O(k) - number of teams competing in tournament. Comes from scores data structure. At most will store k + 1 teams.
+
+//test branch 2 
